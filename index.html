@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <style>
+      body {
+        padding: 24px;
+        display: grid;
+        place-content: center;
+        background-color: azure;
+      }
+      label {
+        display: block;
+        padding-top: 10px;
+      }
+      input {
+        width: unset;
+      }
+      #main {
+        background-color: snow;
+      }
+      fieldset > legend {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      fieldset ~ button {
+        background-color: seashell;
+        margin-top: 10px;
+        border-radius: 15%;
+        border: 2px solid aquamarine;
+      }
+      form + a {
+        display: block;
+        background-color: seashell;
+        border: 2px solid aquamarine;
+        margin-top: 10px;
+        border-radius: 15%;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+      }
+      a:hover {
+        color: blue;
+      }
+      button {
+        margin: auto;
+      }
+      fieldset:first-child {
+        font-style: italic;
+      }
+      .fullname {
+        font-style: normal;
+      }
+      h2::first-letter {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset style="width: 300px" id="main">
+      <h2 style="text-align: center">Registration Form</h2>
+      <form action="login.html">
+        <fieldset>
+          <legend for="username" class="fullname">Full Name</legend>
+          <input
+            type="text"
+            id="username"
+            class="username"
+            placeholder="Please enter your full name"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Gender</legend>
+
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" />
+
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Education degree</legend>
+          <label for="edu">No degree</label>
+          <input type="checkbox" id="edu" name="edu" />
+          <label for="edu1">School degree</label>
+          <input type="checkbox" id="edu1" name="edu1" />
+          <label for="edu2">Bachelor degree</label>
+          <input type="checkbox" id="edu2" name="edu2" />
+          <label for="edu3">Masters degree</label>
+          <input type="checkbox" id="edu3" name="edu3" />
+          <label for="edu4">PhD degree </label>
+          <input type="checkbox" id="edu4" name="edu4" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Email address</legend>
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Please enter your email"
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Please enter your password"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Birth date</legend>
+          <label for="birthdate">Enter your birth date</label>
+          <input type="date" id="birthdate" name="birthdate" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Phone number</legend>
+          <label for="number">Enter your phone number</label>
+          <input type="tel" id="number" name="number" />
+        </fieldset>
+        <button type="submit" style="display: block">Submit</button>
+        <button type="reset" style="display: block">Reset information</button>
+      </form>
+      <a href="#">Back to top</a>
+    </fieldset>
+  </body>
+</html>

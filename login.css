@@ -1,0 +1,27 @@
+body {
+    background-color: aliceblue;
+    display: grid;
+    place-content: center;
+    margin-top: 50px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    background-color: azure;
+    border: 2px solid aquamarine;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: blue;
+}

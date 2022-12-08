@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+h2.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.header {
+    padding: 24px;
+    background-color: azure;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.sidebar {
+    flex:30%;
+    background-color: black;
+    padding: 20px;
+}
+.main {
+    flex:70%;
+    padding: 20px;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 24px;
+}
+.sidebar a:hover {
+    color: blue;
+}
+
+.footer {
+    background-color: azure;
+    padding: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width:650px) {
+    .sidebar{
+        flex-direction: column;
+    }
+    
+}
